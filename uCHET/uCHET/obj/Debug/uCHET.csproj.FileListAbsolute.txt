@@ -1,0 +1,142 @@
+C:\Users\pr119voroncov\Desktop\УП.11.02 Разработка приложения\ВСЁ ЧТО СДЕЛАЛИ\uCHET\uCHET\bin\Debug\uCHET.exe.config
+C:\Users\pr119voroncov\Desktop\УП.11.02 Разработка приложения\ВСЁ ЧТО СДЕЛАЛИ\uCHET\uCHET\bin\Debug\uCHET.exe
+C:\Users\pr119voroncov\Desktop\УП.11.02 Разработка приложения\ВСЁ ЧТО СДЕЛАЛИ\uCHET\uCHET\bin\Debug\uCHET.pdb
+C:\Users\pr119voroncov\Desktop\УП.11.02 Разработка приложения\ВСЁ ЧТО СДЕЛАЛИ\uCHET\uCHET\obj\Debug\uCHET.csprojAssemblyReference.cache
+C:\Users\pr119voroncov\Desktop\УП.11.02 Разработка приложения\ВСЁ ЧТО СДЕЛАЛИ\uCHET\uCHET\obj\Debug\MainWindow.g.cs
+C:\Users\pr119voroncov\Desktop\УП.11.02 Разработка приложения\ВСЁ ЧТО СДЕЛАЛИ\uCHET\uCHET\obj\Debug\App.g.cs
+C:\Users\pr119voroncov\Desktop\УП.11.02 Разработка приложения\ВСЁ ЧТО СДЕЛАЛИ\uCHET\uCHET\obj\Debug\uCHET_MarkupCompile.cache
+C:\Users\pr119voroncov\Desktop\УП.11.02 Разработка приложения\ВСЁ ЧТО СДЕЛАЛИ\uCHET\uCHET\obj\Debug\uCHET_MarkupCompile.lref
+C:\Users\pr119voroncov\Desktop\УП.11.02 Разработка приложения\ВСЁ ЧТО СДЕЛАЛИ\uCHET\uCHET\obj\Debug\MainWindow.baml
+C:\Users\pr119voroncov\Desktop\УП.11.02 Разработка приложения\ВСЁ ЧТО СДЕЛАЛИ\uCHET\uCHET\obj\Debug\uCHET.g.resources
+C:\Users\pr119voroncov\Desktop\УП.11.02 Разработка приложения\ВСЁ ЧТО СДЕЛАЛИ\uCHET\uCHET\obj\Debug\uCHET.Properties.Resources.resources
+C:\Users\pr119voroncov\Desktop\УП.11.02 Разработка приложения\ВСЁ ЧТО СДЕЛАЛИ\uCHET\uCHET\obj\Debug\uCHET.csproj.GenerateResource.cache
+C:\Users\pr119voroncov\Desktop\УП.11.02 Разработка приложения\ВСЁ ЧТО СДЕЛАЛИ\uCHET\uCHET\obj\Debug\uCHET.csproj.CoreCompileInputs.cache
+C:\Users\pr119voroncov\Desktop\УП.11.02 Разработка приложения\ВСЁ ЧТО СДЕЛАЛИ\uCHET\uCHET\obj\Debug\uCHET.exe
+C:\Users\pr119voroncov\Desktop\УП.11.02 Разработка приложения\ВСЁ ЧТО СДЕЛАЛИ\uCHET\uCHET\obj\Debug\uCHET.pdb
+C:\Users\pr119voroncov\Desktop\УП.11.02 Разработка приложения\ВСЁ ЧТО СДЕЛАЛИ\uCHET\uCHET\bin\Debug\EntityFramework.dll
+C:\Users\pr119voroncov\Desktop\УП.11.02 Разработка приложения\ВСЁ ЧТО СДЕЛАЛИ\uCHET\uCHET\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\pr119voroncov\Desktop\УП.11.02 Разработка приложения\ВСЁ ЧТО СДЕЛАЛИ\uCHET\uCHET\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\pr119voroncov\Desktop\УП.11.02 Разработка приложения\ВСЁ ЧТО СДЕЛАЛИ\uCHET\uCHET\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\pr119voroncov\Desktop\УП.11.02 Разработка приложения\ВСЁ ЧТО СДЕЛАЛИ\uCHET\uCHET\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\pr119voroncov\Desktop\УП.11.02 Разработка приложения\ВСЁ ЧТО СДЕЛАЛИ\uCHET\uCHET\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\pr119voroncov\Desktop\УП.11.02 Разработка приложения\ВСЁ ЧТО СДЕЛАЛИ\uCHET\uCHET\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\pr119voroncov\Desktop\УП.11.02 Разработка приложения\ВСЁ ЧТО СДЕЛАЛИ\uCHET\uCHET\bin\Debug\EntityFramework.xml
+C:\Users\pr119voroncov\Desktop\УП.11.02 Разработка приложения\ВСЁ ЧТО СДЕЛАЛИ\uCHET\uCHET\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\pr119voroncov\Desktop\УП.11.02 Разработка приложения\ВСЁ ЧТО СДЕЛАЛИ\uCHET\uCHET\bin\Debug\cs-CZ\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\pr119voroncov\Desktop\УП.11.02 Разработка приложения\ВСЁ ЧТО СДЕЛАЛИ\uCHET\uCHET\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\pr119voroncov\Desktop\УП.11.02 Разработка приложения\ВСЁ ЧТО СДЕЛАЛИ\uCHET\uCHET\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\pr119voroncov\Desktop\УП.11.02 Разработка приложения\ВСЁ ЧТО СДЕЛАЛИ\uCHET\uCHET\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\pr119voroncov\Desktop\УП.11.02 Разработка приложения\ВСЁ ЧТО СДЕЛАЛИ\uCHET\uCHET\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\pr119voroncov\Desktop\УП.11.02 Разработка приложения\ВСЁ ЧТО СДЕЛАЛИ\uCHET\uCHET\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\pr119voroncov\Desktop\УП.11.02 Разработка приложения\ВСЁ ЧТО СДЕЛАЛИ\uCHET\uCHET\bin\Debug\ja-JP\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\pr119voroncov\Desktop\УП.11.02 Разработка приложения\ВСЁ ЧТО СДЕЛАЛИ\uCHET\uCHET\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\pr119voroncov\Desktop\УП.11.02 Разработка приложения\ВСЁ ЧТО СДЕЛАЛИ\uCHET\uCHET\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\pr119voroncov\Desktop\УП.11.02 Разработка приложения\ВСЁ ЧТО СДЕЛАЛИ\uCHET\uCHET\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\pr119voroncov\Desktop\УП.11.02 Разработка приложения\ВСЁ ЧТО СДЕЛАЛИ\uCHET\uCHET\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\pr119voroncov\Desktop\УП.11.02 Разработка приложения\ВСЁ ЧТО СДЕЛАЛИ\uCHET\uCHET\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\pr119voroncov\Desktop\УП.11.02 Разработка приложения\ВСЁ ЧТО СДЕЛАЛИ\uCHET\uCHET\obj\Debug\AddForm.g.cs
+C:\Users\pr119voroncov\Desktop\УП.11.02 Разработка приложения\ВСЁ ЧТО СДЕЛАЛИ\uCHET\uCHET\obj\Debug\LoginForm.g.cs
+C:\Users\pr119voroncov\Desktop\УП.11.02 Разработка приложения\ВСЁ ЧТО СДЕЛАЛИ\uCHET\uCHET\obj\Debug\Otchet.g.cs
+C:\Users\pr119voroncov\Desktop\УП.11.02 Разработка приложения\ВСЁ ЧТО СДЕЛАЛИ\uCHET\uCHET\obj\Debug\uCHET_Content.g.cs
+C:\Users\pr119voroncov\Desktop\УП.11.02 Разработка приложения\ВСЁ ЧТО СДЕЛАЛИ\uCHET\uCHET\obj\Debug\App.baml
+C:\Users\pr119voroncov\Desktop\УП.11.02 Разработка приложения\ВСЁ ЧТО СДЕЛАЛИ\uCHET\uCHET\obj\Debug\AddForm.baml
+C:\Users\pr119voroncov\Desktop\УП.11.02 Разработка приложения\ВСЁ ЧТО СДЕЛАЛИ\uCHET\uCHET\obj\Debug\LoginForm.baml
+C:\Users\pr119voroncov\Desktop\УП.11.02 Разработка приложения\ВСЁ ЧТО СДЕЛАЛИ\uCHET\uCHET\obj\Debug\Otchet.baml
+C:\Users\pr119voroncov\Desktop\УП.11.02 Разработка приложения\ВСЁ ЧТО СДЕЛАЛИ\uCHET\uCHET\obj\Debug\uCHET.csproj.CopyComplete
+C:\Users\pr119voroncov\Desktop\УП.11.02 Разработка приложения\ВСЁ ЧТО СДЕЛАЛИ\uCHET\uCHET\bin\Debug\Syncfusion.Compression.Base.dll
+C:\Users\pr119voroncov\Desktop\УП.11.02 Разработка приложения\ВСЁ ЧТО СДЕЛАЛИ\uCHET\uCHET\bin\Debug\Syncfusion.Data.WPF.dll
+C:\Users\pr119voroncov\Desktop\УП.11.02 Разработка приложения\ВСЁ ЧТО СДЕЛАЛИ\uCHET\uCHET\bin\Debug\Syncfusion.Licensing.dll
+C:\Users\pr119voroncov\Desktop\УП.11.02 Разработка приложения\ВСЁ ЧТО СДЕЛАЛИ\uCHET\uCHET\bin\Debug\Syncfusion.Pdf.Base.dll
+C:\Users\pr119voroncov\Desktop\УП.11.02 Разработка приложения\ВСЁ ЧТО СДЕЛАЛИ\uCHET\uCHET\bin\Debug\Syncfusion.SfGrid.WPF.dll
+C:\Users\pr119voroncov\Desktop\УП.11.02 Разработка приложения\ВСЁ ЧТО СДЕЛАЛИ\uCHET\uCHET\bin\Debug\Syncfusion.SfGridConverter.WPF.dll
+C:\Users\pr119voroncov\Desktop\УП.11.02 Разработка приложения\ВСЁ ЧТО СДЕЛАЛИ\uCHET\uCHET\bin\Debug\Syncfusion.Shared.WPF.dll
+C:\Users\pr119voroncov\Desktop\УП.11.02 Разработка приложения\ВСЁ ЧТО СДЕЛАЛИ\uCHET\uCHET\bin\Debug\Syncfusion.XlsIO.Base.dll
+C:\Users\pr119voroncov\Desktop\УП.11.02 Разработка приложения\ВСЁ ЧТО СДЕЛАЛИ\uCHET\uCHET\bin\Debug\Syncfusion.Compression.Base.xml
+C:\Users\pr119voroncov\Desktop\УП.11.02 Разработка приложения\ВСЁ ЧТО СДЕЛАЛИ\uCHET\uCHET\bin\Debug\Syncfusion.Data.WPF.xml
+C:\Users\pr119voroncov\Desktop\УП.11.02 Разработка приложения\ВСЁ ЧТО СДЕЛАЛИ\uCHET\uCHET\bin\Debug\Syncfusion.Pdf.Base.xml
+C:\Users\pr119voroncov\Desktop\УП.11.02 Разработка приложения\ВСЁ ЧТО СДЕЛАЛИ\uCHET\uCHET\bin\Debug\Syncfusion.SfGrid.WPF.xml
+C:\Users\pr119voroncov\Desktop\УП.11.02 Разработка приложения\ВСЁ ЧТО СДЕЛАЛИ\uCHET\uCHET\bin\Debug\Syncfusion.SfGridConverter.WPF.xml
+C:\Users\pr119voroncov\Desktop\УП.11.02 Разработка приложения\ВСЁ ЧТО СДЕЛАЛИ\uCHET\uCHET\bin\Debug\Syncfusion.Shared.WPF.xml
+C:\Users\pr119voroncov\Desktop\УП.11.02 Разработка приложения\ВСЁ ЧТО СДЕЛАЛИ\uCHET\uCHET\bin\Debug\Syncfusion.XlsIO.Base.xml
+C:\Users\pr119voroncov\Desktop\УП.11.02 Разработка приложения\ВСЁ ЧТО СДЕЛАЛИ\uCHET\uCHET\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\pr119voroncov\Desktop\УП.11.02 Разработка приложения\ВСЁ ЧТО СДЕЛАЛИ\uCHET\uCHET\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\pr119voroncov\Desktop\УП.11.02 Разработка приложения\ВСЁ ЧТО СДЕЛАЛИ\uCHET\uCHET\obj\Debug\AnalysForm.g.cs
+C:\Users\pr119voroncov\Desktop\УП.11.02 Разработка приложения\ВСЁ ЧТО СДЕЛАЛИ\uCHET\uCHET\obj\Debug\AnalysForm.baml
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\obj\Debug\uCHET.csproj.AssemblyReference.cache
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\obj\Debug\uCHET.csproj.SuggestedBindingRedirects.cache
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\obj\Debug\AddForm.g.cs
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\obj\Debug\AnalysForm.g.cs
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\obj\Debug\LoginForm.g.cs
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\obj\Debug\MainWindow.g.cs
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\obj\Debug\App.g.cs
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\obj\Debug\uCHET_Content.g.cs
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\obj\Debug\uCHET_MarkupCompile.cache
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\obj\Debug\uCHET_MarkupCompile.lref
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\obj\Debug\uCHET.exe
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\obj\Debug\uCHET.pdb
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\bin\Debug\uCHET.exe.config
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\bin\Debug\uCHET.exe
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\bin\Debug\uCHET.pdb
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\bin\Debug\EntityFramework.dll
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\bin\Debug\Syncfusion.Compression.Base.dll
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\bin\Debug\Syncfusion.Data.WPF.dll
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\bin\Debug\Syncfusion.Licensing.dll
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\bin\Debug\Syncfusion.Pdf.Base.dll
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\bin\Debug\Syncfusion.SfGrid.WPF.dll
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\bin\Debug\Syncfusion.SfGridConverter.WPF.dll
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\bin\Debug\Syncfusion.Shared.WPF.dll
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\bin\Debug\Syncfusion.XlsIO.Base.dll
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\bin\Debug\EntityFramework.xml
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\bin\Debug\Syncfusion.Compression.Base.xml
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\bin\Debug\Syncfusion.Data.WPF.xml
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\bin\Debug\Syncfusion.Pdf.Base.xml
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\bin\Debug\Syncfusion.SfGrid.WPF.xml
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\bin\Debug\Syncfusion.SfGridConverter.WPF.xml
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\bin\Debug\Syncfusion.Shared.WPF.xml
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\bin\Debug\Syncfusion.XlsIO.Base.xml
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\bin\Debug\cs-CZ\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\bin\Debug\ja-JP\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\obj\Debug\AddForm.baml
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\obj\Debug\AnalysForm.baml
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\obj\Debug\LoginForm.baml
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\obj\Debug\MainWindow.baml
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\obj\Debug\uCHET.g.resources
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\obj\Debug\uCHET.Properties.Resources.resources
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\obj\Debug\uCHET.csproj.GenerateResource.cache
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\obj\Debug\uCHET.csproj.CoreCompileInputs.cache
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\obj\Debug\uCHET.csproj.CopyComplete
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\bin\Debug\CsvHelper.dll
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\bin\Debug\Microsoft.Bcl.HashCode.dll
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\bin\Debug\System.Buffers.dll
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\bin\Debug\System.Memory.dll
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\bin\Debug\CsvHelper.xml
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\bin\Debug\Microsoft.Bcl.HashCode.xml
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\bin\Debug\System.Buffers.xml
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\bin\Debug\System.Memory.xml
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\dshbo\OneDrive\Рабочий стол\uCHET\uCHET\bin\Debug\System.Threading.Tasks.Extensions.xml

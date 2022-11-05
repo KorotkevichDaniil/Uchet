@@ -1,0 +1,43 @@
+﻿<Window x:Class="uCHET.LoginForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:uCHET"
+        mc:Ignorable="d"
+        Title="Авторизация" Height="350" Width="400">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.8*"/>
+            <RowDefinition Height="0.8*"/>
+            <RowDefinition Height="0.8*"/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        
+        <!--ЛАБЕЛЫ-->
+        <Label Content="Имя пользователя:" HorizontalAlignment="Right" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18" FontFamily="Verdana"/>
+        <Label Content="Пароль:" Grid.Row="1"  HorizontalAlignment="Right" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18" FontFamily="Verdana"/>
+
+        <TextBox x:Name="txtLogin" Grid.Row="0" Grid.Column="1" Width="150" Height="40" HorizontalAlignment="Center" TextAlignment="Center" VerticalContentAlignment="Center" TextChanged="txt_TextChanged" FontSize="18"  />
+        <TextBox x:Name="txtPass" Grid.Row="1" Grid.Column="1" Width="150" Height="40" HorizontalAlignment="Center" TextAlignment="Center" TextChanged="txt_TextChanged" VerticalContentAlignment="Center" FontSize="18" />
+        
+        <Label x:Name="CountTry" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" Width="320" Height="40" FontFamily="Verdana" FontSize="20" Foreground="Gray" Visibility="Hidden" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+
+        <StackPanel Orientation="Vertical"  Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2" Grid.RowSpan="2">
+            <TextBlock x:Name="txtCapcha" Width="200" Height="35" Visibility="Hidden" Margin="5" FontSize="20" TextAlignment="Center"/>
+            <TextBox x:Name="txtReadyCapcha" Width="200" Height="35" Visibility="Hidden" FontSize="20" TextAlignment="Center" TextChanged="txt_TextChanged"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" >
+                <Button x:Name="btnIn" Content="Войти" Width="120" Height="30" Margin="10" FontSize="14" Click="btnIn_Click" IsEnabled="False"/>
+                <Button x:Name="btnCancel" Content="Выход" Width="120" Height="30" Margin="10" FontSize="14" Click="btnCancel_Click"/>
+            </StackPanel>
+        </StackPanel>
+        
+       
+       
+    </Grid>
+</Window>

@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище uchetPR419ModelContainer" CdmEntityContainer="uchetPR419Entities">
+    <EntitySetMapping Name="categories">
+      <EntityTypeMapping TypeName="uchetPR419Model.category">
+        <MappingFragment StoreEntitySet="category">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="category_name" ColumnName="category_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="products">
+      <EntityTypeMapping TypeName="uchetPR419Model.product">
+        <MappingFragment StoreEntitySet="products">
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="product_name" ColumnName="product_name" />
+          <ScalarProperty Name="category_id" ColumnName="category_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="products_users">
+      <EntityTypeMapping TypeName="uchetPR419Model.products_users">
+        <MappingFragment StoreEntitySet="products_users">
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="product_id" ColumnName="product_id" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="count" ColumnName="count" />
+          <ScalarProperty Name="sum" ColumnName="sum" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="uchetPR419Model.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="users">
+      <EntityTypeMapping TypeName="uchetPR419Model.user">
+        <MappingFragment StoreEntitySet="users">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="family_name" ColumnName="family_name" />
+          <ScalarProperty Name="first_name" ColumnName="first_name" />
+          <ScalarProperty Name="patronymic" ColumnName="patronymic" />
+          <ScalarProperty Name="login" ColumnName="login" />
+          <ScalarProperty Name="password" ColumnName="password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="Хранилище uchetPR419Model.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="Хранилище uchetPR419Model.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="Хранилище uchetPR419Model.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="Хранилище uchetPR419Model.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="uchetPR419Model.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="Хранилище uchetPR419Model.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="uchetPR419Model.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="Хранилище uchetPR419Model.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="Хранилище uchetPR419Model.sp_upgraddiagrams" />
+    <EntitySetMapping Name="v_Plategi">
+      <EntityTypeMapping TypeName="uchetPR419Model.v_Plategi">
+        <MappingFragment StoreEntitySet="v_Plategi">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="User_id" ColumnName="User_id" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="sum" ColumnName="sum" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="count" ColumnName="count" />
+          <ScalarProperty Name="Payment_name" ColumnName="Payment_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_AddPayment" FunctionName="Хранилище uchetPR419Model.sp_AddPayment" />
+    <EntitySetMapping Name="analys">
+      <EntityTypeMapping TypeName="uchetPR419Model.analy">
+        <MappingFragment StoreEntitySet="analys">
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="added" ColumnName="added" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_AddAnalys" FunctionName="Хранилище uchetPR419Model.sp_AddAnalys" />
+    <FunctionImportMapping FunctionImportName="sp_AddToAdded" FunctionName="Хранилище uchetPR419Model.sp_AddToAdded" />
+    <FunctionImportMapping FunctionImportName="sp_AddToDeleted" FunctionName="Хранилище uchetPR419Model.sp_AddToDeleted" />
+  </EntityContainerMapping>
+</Mapping>

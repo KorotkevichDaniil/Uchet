@@ -1,0 +1,81 @@
+﻿<Window x:Class="uCHET.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:uCHET"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf" 
+        mc:Ignorable="d"
+        Title="Главная страница" Height="450" Width="900" Closed="Window_Closed">
+    <Window.Resources>
+        <Style TargetType="DataGridColumnHeader">
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        </Style>
+        <Style TargetType="DataGridCell" x:Key="CellCenter">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="DataGridCell">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Width="30" Height="30" Grid.Row="0" Margin="5" Content="+" Name="btnAdd" Click="btnAdd_Click" FontSize="18" VerticalContentAlignment="Center" />
+            <Button Width="30" Height="30" Grid.Row="0" Margin="5" Content="-" Name="btnDelete" Click="btnDelete_Click" FontSize="18" VerticalContentAlignment="Center" />
+            <TextBlock Text="С" VerticalAlignment="Center" Margin="5"/>
+            <DatePicker Width="100" Height="30" Margin="5" SelectedDateChanged="dateFrom_SelectedDateChanged" Name="dateFrom"/>
+            <TextBlock Text="по" VerticalAlignment="Center" Margin="5"/>
+            <DatePicker Width="100" Height="30" Margin="5" Name="dateTo" SelectedDateChanged="dateTo_SelectedDateChanged"/>
+            <TextBlock Text="Категория" VerticalAlignment="Center" Margin="5"/>
+            <ComboBox Width="220" Height="30" Margin="5" x:Name="cmbCategory" SelectionChanged="cmbCategory_SelectionChanged" SelectedIndex="0" DisplayMemberPath="category_name" SelectedValuePath="category_name"/>
+            
+            <Button Width="70" Height="30" Grid.Row="0" Margin="5" Content="Очистить" Name="btnClear" Click="btnClear_Click" />
+            <Button Width="70" Height="30" Grid.Row="0" Margin="5" Content="Анализ" Name="btnSelect" Click="btnSelect_Click"/>
+            <Button Width="70" Height="30" Grid.Row="0" Margin="5" Content="Отчёт" Name="btnOtchet" Click="btnOtchet_Click"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="1">
+            <Label Content="Поиск:" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18" FontFamily="Verdana"/>
+            <TextBox x:Name="txtSearch" Width="400" Height="40" TextAlignment="Left" VerticalContentAlignment="Center" FontFamily="Verdana" FontSize="16" Padding="5" TextChanged="txtSearch_TextChanged"/>
+        </StackPanel>
+        
+        <syncfusion:SfDataGrid Name="dataGrid" AutoGenerateColumns="False" ColumnSizer="Star" Grid.Row="2" SelectionMode="Multiple" AllowSorting="False" Loaded="dataGrid_Loaded">
+            <syncfusion:SfDataGrid.Columns>
+                <syncfusion:GridTextColumn HeaderText="Название платежа" MappingName="Payment_name"/>
+                <syncfusion:GridTextColumn MappingName="count" HeaderText="Количество" />
+                <syncfusion:GridTextColumn MappingName="price" HeaderText="Цена" SortMode="Display" />
+                <syncfusion:GridTextColumn MappingName="sum" HeaderText="Сумма"/>
+                <syncfusion:GridTextColumn MappingName="Category" HeaderText="Категория"/>
+                <syncfusion:GridTemplateColumn>
+                    <syncfusion:GridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="Редактировать" x:Name="btnRedact" Click="btnRedact_Click"></Button>
+                        </DataTemplate>
+                    </syncfusion:GridTemplateColumn.CellTemplate>
+                </syncfusion:GridTemplateColumn>
+            </syncfusion:SfDataGrid.Columns>
+            <syncfusion:SfDataGrid.SortColumnDescriptions>
+                <syncfusion:SortColumnDescription ColumnName="price" SortDirection="Ascending" />
+            </syncfusion:SfDataGrid.SortColumnDescriptions>
+        </syncfusion:SfDataGrid>
+        <!--<DataGrid Grid.Row="1" AutoGenerateColumns="False" x:Name="dataGrid" CanUserAddRows="False" CanUserDeleteRows="False" CanUserReorderColumns="False" CanUserSortColumns="False"  IsReadOnly="True" SelectionChanged="dataGrid_SelectionChanged">
+            <DataGrid.Columns>
+                <DataGridTextColumn Width="3*" Header="Название платежа" Binding="{Binding Payment_name}" />
+                <DataGridTextColumn Width="*" Header="Количество" Binding="{Binding count}" CellStyle="{StaticResource CellCenter}"/>
+                <DataGridTextColumn Width="*" Header="Цена" Binding="{Binding price}" CellStyle="{StaticResource CellCenter}"/>
+                <DataGridTextColumn Width="*" Header="Сумма" Binding="{Binding sum}" CellStyle="{StaticResource CellCenter}"/>
+                <DataGridTextColumn Width="2*" Header="Категория" Binding="{Binding Category}"/>
+            </DataGrid.Columns>
+        </DataGrid>-->
+    </Grid>
+</Window>

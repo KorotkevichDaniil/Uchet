@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="uchetPR419Model1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="analy">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="added" Type="Int32" Nullable="false" />
+    <Property Name="deleted" Type="Int32" Nullable="false" />
+    <Property Name="user_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="user" Relationship="Self.FK_analys_users" FromRole="analys" ToRole="users" />
+    <Property Name="updated" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="category">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="category_name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="products" Relationship="Self.FK_products_category" FromRole="category" ToRole="products" />
+  </EntityType>
+  <EntityType Name="product">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="product_name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="category_id" Type="Int32" Nullable="false" />
+    <Property Name="price" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <NavigationProperty Name="category" Relationship="Self.FK_products_category" FromRole="products" ToRole="category" />
+    <NavigationProperty Name="products_users" Relationship="Self.FK_products_users_products" FromRole="products" ToRole="products_users" />
+  </EntityType>
+  <EntityType Name="products_users">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="product_id" Type="Int32" Nullable="false" />
+    <Property Name="user_id" Type="Int32" Nullable="false" />
+    <Property Name="price" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="count" Type="Int32" Nullable="false" />
+    <Property Name="sum" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="name_payment" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="product" Relationship="Self.FK_products_users_products" FromRole="products_users" ToRole="products" />
+    <NavigationProperty Name="user" Relationship="Self.FK_products_users_users" FromRole="products_users" ToRole="users" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="user">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="family_name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="first_name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="patronymic" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="login" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="password" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="analys" Relationship="Self.FK_analys_users" FromRole="users" ToRole="analys" />
+    <NavigationProperty Name="products_users" Relationship="Self.FK_products_users_users" FromRole="users" ToRole="products_users" />
+  </EntityType>
+  <EntityType Name="v_Plategi">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="Payment_name" />
+      <PropertyRef Name="count" />
+      <PropertyRef Name="price" />
+      <PropertyRef Name="sum" />
+      <PropertyRef Name="Category" />
+      <PropertyRef Name="date" />
+      <PropertyRef Name="User_id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="Payment_name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="count" Type="Int32" Nullable="false" />
+    <Property Name="price" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="sum" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="Category" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="User_id" Type="Int32" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_analys_users">
+    <End Role="users" Type="Self.user" Multiplicity="1" />
+    <End Role="analys" Type="Self.analy" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="analys">
+        <PropertyRef Name="user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_products_category">
+    <End Role="category" Type="Self.category" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="products" Type="Self.product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="category">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="products">
+        <PropertyRef Name="category_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_products_users_products">
+    <End Role="products" Type="Self.product" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="products_users" Type="Self.products_users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="products">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="products_users">
+        <PropertyRef Name="product_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_products_users_users">
+    <End Role="users" Type="Self.user" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="products_users" Type="Self.products_users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="products_users">
+        <PropertyRef Name="user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="uchetPR419Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="analys" EntityType="Self.analy" />
+    <EntitySet Name="categories" EntityType="Self.category" />
+    <EntitySet Name="products" EntityType="Self.product" />
+    <EntitySet Name="products_users" EntityType="Self.products_users" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <EntitySet Name="users" EntityType="Self.user" />
+    <EntitySet Name="v_Plategi" EntityType="Self.v_Plategi" />
+    <AssociationSet Name="FK_analys_users" Association="Self.FK_analys_users">
+      <End Role="users" EntitySet="users" />
+      <End Role="analys" EntitySet="analys" />
+    </AssociationSet>
+    <AssociationSet Name="FK_products_category" Association="Self.FK_products_category">
+      <End Role="category" EntitySet="categories" />
+      <End Role="products" EntitySet="products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_products_users_products" Association="Self.FK_products_users_products">
+      <End Role="products" EntitySet="products" />
+      <End Role="products_users" EntitySet="products_users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_products_users_users" Association="Self.FK_products_users_users">
+      <End Role="users" EntitySet="users" />
+      <End Role="products_users" EntitySet="products_users" />
+    </AssociationSet>
+    <FunctionImport Name="sp_AddAnalys">
+      <Parameter Name="date" Mode="In" Type="DateTime" />
+      <Parameter Name="user" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_AddPayment">
+      <Parameter Name="Name" Mode="In" Type="String" />
+      <Parameter Name="User" Mode="In" Type="Int32" />
+      <Parameter Name="Count" Mode="In" Type="Int32" />
+      <Parameter Name="Price" Mode="In" Type="Decimal" />
+      <Parameter Name="np" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_AddToAdded">
+      <Parameter Name="date" Mode="In" Type="DateTime" />
+      <Parameter Name="user" Mode="In" Type="Int32" />
+      <Parameter Name="count" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_AddToDeleted">
+      <Parameter Name="date" Mode="In" Type="DateTime" />
+      <Parameter Name="user" Mode="In" Type="Int32" />
+      <Parameter Name="count" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_alterdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_creatediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_dropdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(uchetPR419Model1.sp_helpdiagramdefinition_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(uchetPR419Model1.sp_helpdiagrams_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_renamediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="new_diagramname" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_upgraddiagrams" />
+    <FunctionImport Name="sp_AddToUpdated">
+      <Parameter Name="date" Mode="In" Type="DateTime" />
+      <Parameter Name="user" Mode="In" Type="Int32" />
+      <Parameter Name="count" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_UpdPayment">
+      <Parameter Name="id" Mode="In" Type="Int32" />
+      <Parameter Name="Name" Mode="In" Type="String" />
+      <Parameter Name="User" Mode="In" Type="Int32" />
+      <Parameter Name="Count" Mode="In" Type="Int32" />
+      <Parameter Name="Price" Mode="In" Type="Decimal" />
+      <Parameter Name="np" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="sp_helpdiagramdefinition_Result">
+    <Property Type="Int32" Name="version" Nullable="true" />
+    <Property Type="Binary" Name="definition" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagrams_Result">
+    <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+    <Property Type="Int32" Name="OwnerID" Nullable="false" />
+  </ComplexType>
+</Schema>

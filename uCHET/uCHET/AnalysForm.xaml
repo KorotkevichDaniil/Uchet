@@ -1,0 +1,62 @@
+﻿<Window x:Class="uCHET.AnalysForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:uCHET"
+        xmlns:charts ="clr-namespace:System.Windows.Forms.DataVisualization.Charting;assembly=System.Windows.Forms.DataVisualization"
+        mc:Ignorable="d"
+        Title="Анализ деятельности пользователя" Height="700" Width="700">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+       
+        </Grid.RowDefinitions>
+
+        <DataGrid  AutoGenerateColumns="False" x:Name="dataGrid" CanUserAddRows="False" CanUserDeleteRows="False" CanUserReorderColumns="False" CanUserSortColumns="False"  IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Width="*" Header="" Binding="{Binding date}" />
+                <DataGridTextColumn Width="*" Header="Добавлено" Binding="{Binding added}"/>
+                <DataGridTextColumn Width="*" Header="Изменено" Binding="{Binding updated}"/>
+                <DataGridTextColumn Width="*" Header="Удалено" Binding="{Binding deleted}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <StackPanel Orientation="Vertical" Grid.Column="1">
+            <Label Content="Добавлено" FontWeight="Bold" HorizontalContentAlignment="Center"/>
+            <WindowsFormsHost >
+                <charts:Chart x:Name="chartAnalysAdded">
+                    <charts:Chart.Legends>
+
+                    </charts:Chart.Legends>
+                </charts:Chart>
+            </WindowsFormsHost>
+        </StackPanel>
+        <StackPanel Orientation="Vertical" Grid.Column="1" Grid.Row="1">
+            <Label Content="Изменено" FontWeight="Bold" HorizontalContentAlignment="Center"/>
+            <WindowsFormsHost >
+                <charts:Chart x:Name="chartAnalysUpdated">
+                    <charts:Chart.Legends>
+
+                    </charts:Chart.Legends>
+                </charts:Chart>
+            </WindowsFormsHost>
+        </StackPanel>
+        <StackPanel Orientation="Vertical" Grid.Column="0" Grid.Row="1">
+            <Label Content="Удалено" FontWeight="Bold" HorizontalContentAlignment="Center"/>
+            <WindowsFormsHost >
+                <charts:Chart x:Name="chartAnalysDeleted">
+                    <charts:Chart.Legends>
+
+                    </charts:Chart.Legends>
+                </charts:Chart>
+            </WindowsFormsHost>
+        </StackPanel>
+    </Grid>
+</Window>

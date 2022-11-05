@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a702508123a74312b30db4ec121b3669" Name="Diagram1">
+        <EntityTypeShape EntityType="uchetPR419Model1.analy" Width="1.5" PointX="3" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="uchetPR419Model1.category" Width="1.5" PointX="1.5" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="uchetPR419Model1.product" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="uchetPR419Model1.products_users" Width="1.5" PointX="6" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="uchetPR419Model1.sysdiagram" Width="1.5" PointX="0.75" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="uchetPR419Model1.user" Width="1.5" PointX="0.75" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="uchetPR419Model1.v_Plategi" Width="1.5" PointX="2.75" PointY="8.5" IsExpanded="true" />
+        <AssociationConnector Association="uchetPR419Model1.FK_analys_users" ManuallyRouted="false" />
+        <AssociationConnector Association="uchetPR419Model1.FK_products_category" ManuallyRouted="false" />
+        <AssociationConnector Association="uchetPR419Model1.FK_products_users_products" ManuallyRouted="false" />
+        <AssociationConnector Association="uchetPR419Model1.FK_products_users_users" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

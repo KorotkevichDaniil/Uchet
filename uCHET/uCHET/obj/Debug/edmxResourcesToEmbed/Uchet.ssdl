@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище uchetPR419Model" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="analys">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="date" Type="date" Nullable="false" />
+    <Property Name="added" Type="int" Nullable="false" />
+    <Property Name="deleted" Type="int" Nullable="false" />
+    <Property Name="user_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="category">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="category_name" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="products">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="product_name" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="category_id" Type="int" Nullable="false" />
+    <Property Name="price" Type="money" Nullable="false" />
+  </EntityType>
+  <EntityType Name="products_users">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="product_id" Type="int" Nullable="false" />
+    <Property Name="user_id" Type="int" Nullable="false" />
+    <Property Name="price" Type="money" Nullable="false" />
+    <Property Name="count" Type="int" Nullable="false" />
+    <Property Name="sum" Type="money" Nullable="false" />
+    <Property Name="date" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="users">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="family_name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="first_name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="patronymic" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="login" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="password" Type="nvarchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <!--Ошибки, обнаруженные при создании:
+предупреждение 6002: В таблице или представлении "uchetPR419.dbo.v_Plategi" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+  <EntityType Name="v_Plategi">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="Payment_name" />
+      <PropertyRef Name="count" />
+      <PropertyRef Name="price" />
+      <PropertyRef Name="sum" />
+      <PropertyRef Name="Category" />
+      <PropertyRef Name="date" />
+      <PropertyRef Name="User_id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="Payment_name" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="count" Type="int" Nullable="false" />
+    <Property Name="price" Type="money" Nullable="false" />
+    <Property Name="sum" Type="money" Nullable="false" />
+    <Property Name="Category" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="date" Type="date" Nullable="false" />
+    <Property Name="User_id" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_analys_users">
+    <End Role="users" Type="Self.users" Multiplicity="1" />
+    <End Role="analys" Type="Self.analys" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="analys">
+        <PropertyRef Name="user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_product_users_users">
+    <End Role="users" Type="Self.users" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="products_users" Type="Self.products_users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="products_users">
+        <PropertyRef Name="user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_products_category">
+    <End Role="category" Type="Self.category" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="products" Type="Self.products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="category">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="products">
+        <PropertyRef Name="category_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_products_users_products">
+    <End Role="products" Type="Self.products" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="products_users" Type="Self.products_users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="products">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="products_users">
+        <PropertyRef Name="product_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="fn_diagramobjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
+  <Function Name="sp_AddAnalys" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="date" Type="date" Mode="In" />
+    <Parameter Name="user" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_AddPayment" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Name" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="User" Type="int" Mode="In" />
+    <Parameter Name="Count" Type="int" Mode="In" />
+    <Parameter Name="Price" Type="decimal" Mode="In" />
+  </Function>
+  <Function Name="sp_AddToAdded" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="date" Type="date" Mode="In" />
+    <Parameter Name="user" Type="int" Mode="In" />
+    <Parameter Name="count" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_AddToDeleted" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="date" Type="date" Mode="In" />
+    <Parameter Name="user" Type="int" Mode="In" />
+    <Parameter Name="count" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <EntityContainer Name="Хранилище uchetPR419ModelContainer">
+    <EntitySet Name="analys" EntityType="Self.analys" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="category" EntityType="Self.category" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="products" EntityType="Self.products" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="products_users" EntityType="Self.products_users" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="users" EntityType="Self.users" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="v_Plategi" EntityType="Self.v_Plategi" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [v_Plategi].[id] AS [id], 
+    [v_Plategi].[Payment_name] AS [Payment_name], 
+    [v_Plategi].[count] AS [count], 
+    [v_Plategi].[price] AS [price], 
+    [v_Plategi].[sum] AS [sum], 
+    [v_Plategi].[Category] AS [Category], 
+    [v_Plategi].[date] AS [date], 
+    [v_Plategi].[User_id] AS [User_id]
+    FROM [dbo].[v_Plategi] AS [v_Plategi]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_analys_users" Association="Self.FK_analys_users">
+      <End Role="users" EntitySet="users" />
+      <End Role="analys" EntitySet="analys" />
+    </AssociationSet>
+    <AssociationSet Name="FK_product_users_users" Association="Self.FK_product_users_users">
+      <End Role="users" EntitySet="users" />
+      <End Role="products_users" EntitySet="products_users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_products_category" Association="Self.FK_products_category">
+      <End Role="category" EntitySet="category" />
+      <End Role="products" EntitySet="products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_products_users_products" Association="Self.FK_products_users_products">
+      <End Role="products" EntitySet="products" />
+      <End Role="products_users" EntitySet="products_users" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
